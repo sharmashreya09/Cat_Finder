@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+ {% block css%}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: black;
+font-weight:bold;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  color: grey;
+}
+
+.blank
+{
+  height:80px;
+}
+h2
+{
+  color:black;
+  font-weight:bold;
+}
+img
+{
+  height:340px;
+}
+.abt
+{
+  font-size: 70px;
+}
+.img-fluid
+{
+  width:700px;
+}
+body
+{
+margin:0px;
+padding:0px;
+color:black;
+}
+.red
+{
+  display:flex;
+}
+.contimg
+{
+ height:200px;
+ width:240px;
+ margin:10px;
+}
+.esseimg
+{
+  height:90px;
+  width:90px;
+}
+h3
+{
+   color:yellow;
+}
+
+
+
+ {% endblock%}
+
+{% block body %}
+  <div class="about-section">
+  <div class="abt">About Us </div>
+      <div class="blank"></div>
+      <div class="container my-4">
+
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">The Essence of Cattie </h2>
+                <p class="lead">Known for providing the best quality services
+                    in the most efficient budgets, Cattie believes in creating
+                    customer-centric experiences. We are a small group of people
+                    who are constantly working towards gearing a better business
+                    future for our clientele.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="https://essentiasoftserv.com/_nuxt/img/about-us-essentia.c317f77.svg" alt="">
+
+            </div>
+        </div>
+          <div class="blank"></div>
+          <div class="blank"></div>
+          <div class="blank"></div>
+          <div>
+              <h1> What we believes in !!</h1>
+          </div>
+          <div class=" red">
+
+                        <div class="contimg">
+                            <img class="esseimg" src="https://essentiasoftserv.com/_nuxt/img/community.e33e613.svg">
+                            <div class="contt">
+                                <h3>Creating a community</h3>
+                                <p> We are working here as a family
+                                    which isn't just creating the
+                                    best possible web solutions for
+                                    its clientele but also bricking
+                                    up a collaborative community that
+                                    gives back to the world. </p>
+
+                                </div>
+                        </div >
+                        <div class="contimg">
+                            <img class="esseimg" src="https://essentiasoftserv.com/_nuxt/img/curious.924fef6.svg">
+                            <div class="contt">
+                                <h3>Always being Curious</h3>
+                                <p> Just like Mr Jobs said, "Stay Hungry,
+                                    Stay Foolish", we are a curious bunch
+                                    of people who want to solve even the
+                                    tiniest of problems. Let's just say,
+                                    we won't let it go until we fix it!</p>
+
+                                </div>
+                        </div >
+                        <div class="contimg">
+                            <img class="esseimg" src="https://essentiasoftserv.com/_nuxt/img/what-you-want.239026e.svg">
+                            <div class="contt">
+                                <h3>Giving What you want</h3>
+                                <p> We are extremely particular about
+                                    our client's specificities. We are
+                                    here to give face and interface to
+                                    your visions. So, shoot your suggestions
+                                    and queries, we are here to hear them all!</p>
+
+                                </div>
+                        </div >
+                       <div class="contimg">
+                            <img class="esseimg" src="https://essentiasoftserv.com/_nuxt/img/thinking-ahead.00b29fa.svg">
+                           <h3>Thinking Ahead</h3>
+                            <div class="contt">
+                                <p> We work for the bigger picture
+                                    that will help companies create
+                                    a future proof digital presence.
+                                    With newer trends and upgraded versions,
+                                    we offer purposeful online support that
+                                    will lead to positive changes for your business.</p>
+
+                                </div>
+                        </div >
+            </div>
+          <div class="blank"></div>
+          <div class="blank"></div>
+
+
+
+{% endblock %}

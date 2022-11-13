@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% block css %}
+
+.catimg
+{
+    height:550px;
+    width:800px;
+    border-radius:8px;
+}
+
+.box
+{
+   margin:20px;
+    width:1300px;
+    background-color:white;
+    display:flex;
+    position:relative;
+    left:100px;
+    height:550px;
+}
+.boxhead
+{
+
+    font-size:80px;
+    text-decoration: underline;
+}
+.boxcont
+{
+   display:flex;
+   flex-direction:column;
+  margin-left:30px;
+
+}
+.tableinfo
+{
+     border:3px solid black;
+}
+
+{% endblock %}
+{% block body %}
+
+  <div class="box">
+      <img class="catimg" src="{{api.0.image_link}}">
+      <div class="boxcont">
+          <div class="boxhead">{{api.0.name}}</div>
+          <div class="tableinfo">
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+
+      <th scope="col">Properties</th>
+      <th scope="col">Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Length</td>
+      <td>{{api.0.length}}</td>
+
+    </tr>
+    <tr>
+      <td>Origin</td>
+      <td>{{api.0.origin}}</td>
+    </tr>
+    <tr>
+
+      <td>Min Weight</td>
+      <td>{{api.0.min_weight}} kg</td>
+    </tr>
+    <tr>
+
+      <td>Max Weight</td>
+      <td>{{api.0.max_weight}} kg</td>
+    </tr>
+    <tr>
+
+      <td>Min Life Expectancy</td>
+      <td>{{api.0.min_life_expectancy}} years</td>
+    </tr>
+  <tr>
+
+      <td>Max Life Expectancy</td>
+      <td>{{api.0.max_life_expectancy}} years</td>
+    </tr>
+  </tbody>
+</table>
+          </div>
+
+      </div>
+  </div>
+<div class="container">
+<h1> Some Other Information</h1>
+</div>
+<div class="container">
+    <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">QUALITY</th>
+      <th scope="col">POINTS OBTAINED</th>
+      <th scope="col">TOTAL POINTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Family Friendly</td>
+      <td>{{api.0.family_friendly}}</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Shedding</td>
+      <td>{{api.0.shedding}}</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>General Health</td>
+      <td>{{api.0.general_health}}</td>
+      <td>5</td>
+    </tr>
+   <tr>
+      <th scope="row">4</th>
+      <td>Playfulness</td>
+      <td>{{api.0.playfulness}}</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Children Friendly</td>
+      <td>{{api.0.children_friendly}}</td>
+      <td>5</td>
+    </tr>
+   <tr>
+      <th scope="row">6</th>
+      <td>Grooming</td>
+      <td>{{api.0.grooming}}</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Intelligence</td>
+      <td>{{api.0.intelligence}}</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Other Pets Friendly</td>
+      <td>{{api.0.other_pets_friendly}}</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+{% endblock %}
